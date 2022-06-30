@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+  </head>
+  <body>
+    
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!--image slider start-->
+
+
+    <nav class="navbar">
+      
+      <h1 class="logo">SkyLand</h1>
+
+      <ul class="nav-links">
+        <li id="aboutUs"><a href="#"></a>About us</li>
+        <li><a href="#"></a>Sign in </li>
+        <li><a href="#"></a> | </li>
+        <li><a href="#"></a>Sign up</li>
+        <li id="userAccount"><a href="#"></a></li>
+
+      </ul>
+    </nav>
+    <div class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1 class="title"> Venice</h1>
+
+          <ul class="conditions">
+            <li>Free food</li>  
+            <li>Two person</li>
+            <li>Without children</li>
+            <li>Italy, Venice</li>
+            <li>Hotel <a id="stars"></a></li>
+            <li>7 days</li>
+
+          </ul>
+          <div class="PriceAndButton">
+            <button class="moreInfo">More</button>
+            <p class="price">$1099.99</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="title">Amsterdam</h1>
+          <ul class="conditions">
+            <li>Free food</li>  
+            <li>Two person</li>
+            <li>Without children</li>
+            <li>Italy, Venice</li>
+            <li>Hotel <a id="stars"></a></li>
+            <li>7 days</li>
+
+          </ul>
+          <div class="PriceAndButton">
+            <button class="moreInfo">More</button>
+            <p class="price">$1099.99</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="title">Tenerife</h1>
+          <ul class="conditions">
+            <li>Free food</li>  
+            <li>Two person</li>
+            <li>Without children</li>
+            <li>Italy, Venice</li>
+            <li>Hotel <a id="stars"></a></li>
+            <li>7 days</li>
+
+          </ul>
+          <div class="PriceAndButton">
+            <button class="moreInfo">More</button>
+            <p class="price">$1099.99</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="title">Los Angeles</h1>
+           <ul class="conditions">
+            <li>Free food</li>  
+            <li>Two person</li>
+            <li>Without children</li>
+            <li>Italy, Venice</li>
+            <li>Hotel <a id="stars"></a></li>
+            <li>7 days</li>
+
+          </ul>
+          <div class="PriceAndButton">
+            <button class="moreInfo">More</button>
+            <p class="price">$1099.99</p>
+          
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 class="title">Kyoto</h1>
+           <ul class="conditions">
+            <li>Free food</li>  
+            <li>Two person</li>
+            <li>Without children</li>
+            <li>Italy, Venice</li>
+            <li>Hotel <a id="stars"></a></li>
+            <li>7 days</li>
+
+          </ul>
+          <div class="PriceAndButton">
+            <button class="moreInfo">More</button>
+            <p class="price">$1099.99</p>
+          
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="buttons">
+      <button style="background: url('img/left.png'); background-size:cover";   id="prev"></button>
+      <button style="background: url('img/right.png'); background-size:cover" id="next"></button>
+    </div>
+ <script src="main.js"></script>
+
+      <div class="search-filters">
+
+        <div class="filter-title">
+          <h2>Choose the tour of your dream</h2>
+        </div>
+
+        <div class="div-filters">
+          <div id="first-column">
+          <div><label class="text-input">Adults: </label> <input  type="number" class="input-filters" ></div>
+          <div><label class="text-input">Children: </label><input type="number" class="input-filters"></div>  
+          </div>
+
+          <div id="second-column">
+          <div><label class="text-input">Duration: </label><span  id="duration-margin"> <input  type="date" class="duration-id"> <input type="date" class="duration-id"></span></div>
+          <div><label class="text-input">Country: </label><input type="text" class="input-filters"></div>  
+          </div>
+
+          <div id="third-column">
+
+              <div>
+                <div class="wrapper">
+                  <div class="price-input">
+                    <div class="field">
+                      <span>Price:min</span>
+                      <input type="number" class="input-min" value="2500">
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                        <span>max</span>
+                        <input type="number" class="input-max" value="7500">
+                    </div>
+                  </div>
+                <div class="slider_">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="forth-column">
+
+          <div>
+            <label class="text-input2">Hotel star rating: </label>
+          </div>
+
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star2" ><label for="star2"></label>
+            <input type="radio" name="star" id="star3" ><label for="star3"></label>
+            <input type="radio" name="star" id="star4" ><label for="star4"></label>
+            <input type="radio" name="star" id="star5" ><label for="star5"></label>
+          </div>
+
+        </div>
+      </div>
+        
+      <div class="search-button-container">
+        <button class="search-button">Search</button>
+      </div>
+
+    </div>
+
+    <div class="rectangle" >
+      <input  type="text" id="search" placeholder="">
+      <p class="above-search">If you didn’t find necessary information, enter what you want here</p>
+            
+    </div>
+
+  </body>
+</html>
