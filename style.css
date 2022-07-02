@@ -111,7 +111,6 @@ a {
     font-family: 'Montserrat';
 
 }
-
 .PriceAndButton {
     position: relative;
     display: flex;
@@ -123,6 +122,43 @@ a {
     margin-left: 30px;
     font-family: "Montserrat";
 }
+.moreInfoDark{
+    box-sizing: border-box;
+    width: 142px;
+    height: 33px;
+    
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    margin-top: 19px;
+    background: white;
+}
+
+
+.PriceAndButtonDark{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.price-dark{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-left: 84px;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+
 
 .slider {
   position: relative;
@@ -199,7 +235,6 @@ h2{
     justify-content: center;
 }
 .rectangle{
-    position: absolute;
     display: flex;
     width: 100%;
     height: 434px;
@@ -418,8 +453,11 @@ input[type="range"]::-moz-range-thumb{
 {
     opacity: 1;
 }
-#star1{
-
+.star{
+    content: "\f005";
+    font-family: FontAwesome;
+    color: #FFC700;
+    display: flex;
 }
 
 
@@ -519,10 +557,39 @@ input[type="range"]::-moz-range-thumb{
   }
 }
 
+.direction{
+    color:  #000;
+    background: #FFF;
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    margin-top: 62px;
+}
+.travel-sliders
+{
+justify-content: center;
+text-align: center;
+align-items: center;
+align-content: center;
+position: relative;
+
+}
+ .line{
+    width: 184px;
+    height: 0px;
+    left: 612px;
+    top: 1765px;
+    border: 1px solid #000000;
+    transform: rotate(-0.31deg);
+    margin: auto;
+    margin-top: 12px;
+ }
 
 
-/* Backgorund Images */
- 
+
 .slide:first-child {
   background: url('img/1.jpg') no-repeat
     center top/cover;
@@ -559,3 +626,201 @@ input[type="range"]::-moz-range-thumb{
   border: 3px gray;
 }
 */
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+
+.travel-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-top: 83px;
+}
+
+.tarvel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.travel-card {
+    flex: 0 0 auto;
+    width: 335px;
+    height: 527px;
+    margin-right: 46px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+border-radius: 20px 20px 20px 20px;
+}
+
+.travel-image {
+  position: relative;
+  width: 335px;
+height: 304px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.travel-info {
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 13px;
+}
+
+.name {
+    position: relative;
+    color: black;
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 132px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+.description {
+width: 160px;
+height: 104px;
+font-family: 'Montserrat';
+color: #000000;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-top: 10px ;
+letter-spacing: 0.05em;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* or 150% */
+
+letter-spacing: 0.05em;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 1;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
