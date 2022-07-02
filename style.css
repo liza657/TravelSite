@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import "path/to/font-awesome/less/font-awesome.less";
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;&display=swap');
 @import url(http:/netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -638,7 +638,7 @@ position: relative;
 .travel-container {
   padding: 0 10vw;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   margin-top: 83px;
 }
@@ -720,6 +720,7 @@ height: 304px;
     position: relative;
     color: black;
     font-family: 'Montserrat';
+    font-weight: 700;
     font-style: normal;
     width: 132px;
     height: 24px;
@@ -754,7 +755,7 @@ letter-spacing: 0.05em;
 
 .actual-price {
   margin-left: 20px;
-  opacity: 0.5;
+  opacity: 0.2;
   text-decoration: line-through;
 }
 
@@ -771,6 +772,7 @@ letter-spacing: 0.05em;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
   cursor: pointer;
   z-index: 8;
+  opacity: 0.8;
 }
 
 .pre-btn {
