@@ -470,6 +470,7 @@ input[type="range"]::-moz-range-thumb{
     font-family: 'Montserrat',cursive;
     letter-spacing: 0.05em;
     margin-top: 209px;
+    padding-left: 10px;
 }
 .search-button-container{
     position: relative;
@@ -578,7 +579,7 @@ position: relative;
 
 }
  .line{
-    width: 184px;
+    width: 250px;
     height: 0px;
     left: 612px;
     top: 1765px;
@@ -627,10 +628,10 @@ position: relative;
 }
 */
 /* PRODUCTS */
-.product {
+.tarvel {
   position: relative;
   overflow: hidden;
-  padding: 20px;
+  padding: 21px;
 }
 
 
@@ -653,14 +654,14 @@ position: relative;
     height: 527px;
     margin-right: 46px;
     background: #FFFFFF;
-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
-border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 20px 20px;
 }
 
 .travel-image {
   position: relative;
   width: 335px;
-height: 304px;
+  height: 304px;
   width: 100%;
   overflow: hidden;
 }
@@ -671,16 +672,7 @@ height: 304px;
   object-fit: cover;
 }
 
-.discount-tag {
-  position: absolute;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  color: #ff7d7d;
-  right: 10px;
-  top: 10px;
-  text-transform: capitalize;
-}
+
 
 .card-btn {
   position: absolute;
@@ -728,6 +720,7 @@ height: 304px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 .description {
@@ -753,11 +746,7 @@ line-height: 21px;
 letter-spacing: 0.05em;
 }
 
-.actual-price {
-  margin-left: 20px;
-  opacity: 0.2;
-  text-decoration: line-through;
-}
+
 
 .pre-btn,
 .nxt-btn {
@@ -825,4 +814,80 @@ letter-spacing: 0.05em;
 .collection:nth-child(3) {
   grid-column: span 2;
   margin-bottom: 10px;
+}
+.footer-container{
+  background: rgb(35, 35, 35);
+   padding: 4rem 0 4rem 0;
+   margin-top: 100px;
+   color: white;
+   font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+}
+.footer{
+  width: 100%;
+  height: 120px;
+  background: rgb(35, 35, 35);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 130px;
+
+}
+.footer-heading h3{
+  margin-bottom: 1rem;
+}
+
+.footer-heading a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5 rem;
+}
+
+.footer-heading a:hover{
+  color: red;
+  transition: 0.3s ease-out;
+}
+.footer-email-form h2{
+}
+#footer-email{
+    margin-top: 1rem;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 10px;
+    border-radius: 100px;
+    position: relative;
+    border:none;
+    border:solid 1px white;
+    border-radius: 100px;
+    background: rgba(255, 255, 255,0);
+    color: rgba(255, 255, 255,1);
+    font-family: 'Montserrat';
+
+}
+#footer-email::placeholder{
+  color: white;
+}
+#footer-email-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: ;
+  outline: none;
+  border: none;
+  font-size: 1 rem;
+  border-radius: 20px;
+
+}
+#footer-email-btn:hover{
+  cursor: pointer;
+  background-color: grey;
+  transition:all 0.4s ease-out ;
 }
