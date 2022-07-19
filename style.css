@@ -53,10 +53,15 @@ a {
     letter-spacing: 0.05em;
     margin-right: 50px;
     padding: 8px 15px;
+
 }
 
 .nav-links li{
     margin: 0 3px;
+}
+
+.nav-links a{
+    color: white;
 }
 
 #stars{
